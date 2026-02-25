@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simplay — Privacy Policy</title>
+    <title>Simplay — Legal</title>
     <style>
         * {
             margin: 0;
@@ -23,6 +23,44 @@
             max-width: 760px;
             margin: 0 auto;
             padding: 60px 24px 80px;
+        }
+
+        /* Tab Navigation */
+        .tab-nav {
+            display: flex;
+            gap: 0;
+            margin-bottom: 48px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #6e6e73;
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        .tab-btn:hover {
+            color: #1d1d1f;
+        }
+
+        .tab-btn.active {
+            color: #1d1d1f;
+            border-bottom-color: #1d1d1f;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
         }
 
         h1 {
@@ -60,7 +98,7 @@
             color: #333336;
         }
 
-        ul {
+        ul, ol {
             margin: 0 0 16px 24px;
             color: #333336;
         }
@@ -108,6 +146,21 @@
             color: #0066cc;
         }
 
+        .highlight-box {
+            background: #f5f5f7;
+            border-radius: 10px;
+            padding: 20px 24px;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
         .footer {
             margin-top: 60px;
             padding-top: 24px;
@@ -123,190 +176,381 @@
             h1 {
                 font-size: 1.7rem;
             }
+            .tab-btn {
+                padding: 10px 16px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Simplay Privacy Policy</h1>
-        <p class="last-updated">Effective Date: February 24, 2026</p>
 
-        <div class="toc">
-            <p>Contents</p>
-            <ol>
-                <li><a href="#intro">Introduction</a></li>
-                <li><a href="#data-collect">What Data We Collect and How We Collect It</a></li>
-                <li><a href="#purposes">Purposes for Processing Your Data</a></li>
-                <li><a href="#subscriptions">Subscriptions and Purchases</a></li>
-                <li><a href="#disclosure">Disclosure of Your Data</a></li>
-                <li><a href="#third-party">Third-Party Services</a></li>
-                <li><a href="#control">Control Over Your Information</a></li>
-                <li><a href="#rights">Your Privacy Rights</a></li>
-                <li><a href="#children">Children's Privacy</a></li>
-                <li><a href="#security">Data Security</a></li>
-                <li><a href="#retention">Data Retention</a></li>
-                <li><a href="#international">International Data Transfers</a></li>
-                <li><a href="#changes">Changes to This Privacy Policy</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ol>
+        <!-- Tab Navigation -->
+        <nav class="tab-nav">
+            <button class="tab-btn" onclick="switchTab('privacy')">Privacy Policy</button>
+            <button class="tab-btn" onclick="switchTab('terms')">Terms of Use</button>
+        </nav>
+
+        <!-- ==================== TERMS OF USE ==================== -->
+        <div id="terms" class="tab-content">
+            <h1>Terms of Use</h1>
+            <p class="last-updated">Effective Date: February 25, 2026</p>
+
+            <div class="toc">
+                <p>Contents</p>
+                <ol>
+                    <li><a href="#t-acceptance">Acceptance of Terms</a></li>
+                    <li><a href="#t-description">Description of Services</a></li>
+                    <li><a href="#t-eligibility">Eligibility</a></li>
+                    <li><a href="#t-accounts">Accounts and Access</a></li>
+                    <li><a href="#t-plus">Simplay Plus Subscription</a></li>
+                    <li><a href="#t-purchases">In-App Purchases</a></li>
+                    <li><a href="#t-content">Content and Intellectual Property</a></li>
+                    <li><a href="#t-acceptable">Acceptable Use</a></li>
+                    <li><a href="#t-disclaimer">Disclaimers</a></li>
+                    <li><a href="#t-liability">Limitation of Liability</a></li>
+                    <li><a href="#t-termination">Termination</a></li>
+                    <li><a href="#t-governing">Governing Law</a></li>
+                    <li><a href="#t-changes">Changes to These Terms</a></li>
+                    <li><a href="#t-contact">Contact Us</a></li>
+                </ol>
+            </div>
+
+            <!-- T1. Acceptance -->
+            <h2 id="t-acceptance">1. Acceptance of Terms</h2>
+            <p>These Terms of Use ("Terms") govern your access to and use of the Simplay application ("the App", "we", "us", or "our") available on Apple TV and iOS, including all features, content, subscriptions, and in-app purchases (collectively, the "Services"). By downloading, installing, accessing, or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, you must not use our Services.</p>
+            <p>These Terms constitute a legally binding agreement between you and Simplay. Please read them carefully before using our Services.</p>
+
+            <!-- T2. Description -->
+            <h2 id="t-description">2. Description of Services</h2>
+            <p>Simplay is an IPTV application that allows users to watch live television channels, on-demand content, and streaming media on Apple TV and iOS devices. The App provides features including but not limited to live TV playback, channel management, viewing history, favorites, content caching, playback controls, and personalized viewing preferences.</p>
+            <p>We reserve the right to modify, suspend, or discontinue any aspect of the Services at any time, including the availability of any feature, content, or channel, with or without notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuation of the Services.</p>
+
+            <!-- T3. Eligibility -->
+            <h2 id="t-eligibility">3. Eligibility</h2>
+            <p>You must be at least 13 years of age (or the minimum age required in your jurisdiction) to use our Services. If you are between the ages of 13 and 18 (or the age of majority in your jurisdiction), you may only use our Services with the consent and supervision of a parent or legal guardian who agrees to be bound by these Terms.</p>
+            <p>By using our Services, you represent and warrant that you meet the eligibility requirements set forth in this section. If you do not meet these requirements, you must not access or use our Services.</p>
+
+            <!-- T4. Accounts -->
+            <h2 id="t-accounts">4. Accounts and Access</h2>
+            <p>Certain features of the App may require an Apple ID and an active internet connection. You are responsible for maintaining the security of your Apple ID and any credentials used to access the Services. You are solely responsible for all activities that occur under your account.</p>
+            <p>You agree to provide accurate and complete information in connection with your use of the Services, and to keep this information up to date. You must notify us immediately of any unauthorized use of your account or any other breach of security.</p>
+
+            <!-- T5. Simplay Plus -->
+            <h2 id="t-plus">5. Simplay Plus Subscription</h2>
+            <p>Simplay offers a premium subscription plan called "<strong>Simplay Plus</strong>" that unlocks additional features and content within the App.</p>
+
+            <h3>5.1 Subscription Plans</h3>
+            <p>Simplay Plus is available as:</p>
+            <ul>
+                <li><strong>Monthly Plan:</strong> Billed once per month on a recurring basis.</li>
+                <li><strong>Annual Plan:</strong> Billed once per year on a recurring basis.</li>
+            </ul>
+            <p>Current pricing for each plan is displayed within the App prior to purchase. Prices are shown in your local currency and may vary by region. Prices are subject to change, and any price change will take effect at the start of your next billing cycle following notice of the change.</p>
+
+            <h3>5.2 Billing and Auto-Renewal</h3>
+            <div class="highlight-box">
+                <p><strong>Important:</strong> Simplay Plus subscriptions automatically renew unless auto-renewal is turned off at least 24 hours before the end of the current billing period.</p>
+                <p>Payment is charged to your Apple ID account at confirmation of purchase. Your subscription will automatically renew at the same price and duration unless you cancel at least 24 hours before the end of the current period. Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period.</p>
+            </div>
+
+            <h3>5.3 Free Trial</h3>
+            <p>We may, at our sole discretion, offer a free trial period for Simplay Plus. If a free trial is offered, it will be clearly described within the App at the time of sign-up. If you do not cancel before the free trial ends, your subscription will automatically begin and you will be charged the applicable subscription fee. Any unused portion of a free trial period will be forfeited when you purchase a Simplay Plus subscription.</p>
+
+            <h3>5.4 Managing and Cancelling Your Subscription</h3>
+            <p>You may manage or cancel your Simplay Plus subscription at any time through your Apple ID account settings:</p>
+            <ul>
+                <li>On iPhone or iPad: Go to <strong>Settings &gt; [Your Name] &gt; Subscriptions</strong></li>
+                <li>On Apple TV: Go to <strong>Settings &gt; Users and Accounts &gt; [Your Name] &gt; Subscriptions</strong></li>
+                <li>Or visit <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">apps.apple.com/account/subscriptions</a></li>
+            </ul>
+            <p>Cancellation takes effect at the end of the current billing period. You will continue to have access to Simplay Plus features until the end of your current paid period. No refunds or credits will be provided for partial billing periods.</p>
+
+            <h3>5.5 Refunds</h3>
+            <p>All purchases are processed by Apple. To request a refund, please contact Apple directly through <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>. We do not have the ability to process refunds directly, as all billing is handled by Apple.</p>
+
+            <h3>5.6 Simplay Plus Features</h3>
+            <p>Simplay Plus may include, but is not limited to, the following benefits: access to additional channels and content, enhanced playback features, offline caching capabilities, advanced audio and video settings, and an ad-free experience. The specific features included in Simplay Plus may change from time to time. We will make commercially reasonable efforts to notify you of material changes to Plus features.</p>
+
+            <!-- T6. Purchases -->
+            <h2 id="t-purchases">6. In-App Purchases</h2>
+            <p>In addition to the Simplay Plus subscription, the App may offer non-consumable in-app purchases that permanently unlock specific features or content. These one-time purchases are tied to your Apple ID and can be restored on any device signed in with the same Apple ID by using the "Restore Purchases" feature within the App.</p>
+            <p>All in-app purchases are processed through the Apple App Store and are subject to Apple's terms and conditions. We do not process payments directly and do not have access to your payment method details.</p>
+            <p>All sales are final. To request a refund for any in-app purchase, please contact Apple directly through <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+
+            <!-- T7. Content -->
+            <h2 id="t-content">7. Content and Intellectual Property</h2>
+            <p>All content available through the Services — including but not limited to text, graphics, logos, icons, images, audio, video, software, and the overall design and layout of the App — is the property of Simplay or its content providers and is protected by applicable intellectual property laws.</p>
+            <p>You are granted a limited, non-exclusive, non-transferable, revocable license to access and use the Services and their content for your personal, non-commercial use only, subject to these Terms. You may not:</p>
+            <ul>
+                <li>Copy, modify, distribute, sell, or lease any part of our Services or content;</li>
+                <li>Reverse engineer or attempt to extract the source code of our software;</li>
+                <li>Remove, alter, or obscure any proprietary notices or labels on the Services;</li>
+                <li>Use the Services to infringe upon the intellectual property rights of others;</li>
+                <li>Record, capture, redistribute, or rebroadcast any content accessible through the App.</li>
+            </ul>
+
+            <!-- T8. Acceptable Use -->
+            <h2 id="t-acceptable">8. Acceptable Use</h2>
+            <p>You agree not to use the Services in any manner that:</p>
+            <ul>
+                <li>Violates any applicable local, national, or international law or regulation;</li>
+                <li>Infringes upon or violates the intellectual property rights or privacy rights of any third party;</li>
+                <li>Attempts to gain unauthorized access to any part of the Services, other accounts, computer systems, or networks;</li>
+                <li>Introduces viruses, malware, or other harmful code into the Services;</li>
+                <li>Interferes with or disrupts the integrity or performance of the Services or the data contained therein;</li>
+                <li>Attempts to circumvent any content protection, digital rights management, or access control mechanisms;</li>
+                <li>Uses the Services for any unauthorized commercial purpose;</li>
+                <li>Uses automated means (bots, scrapers, spiders) to access or interact with the Services without our express written permission.</li>
+            </ul>
+            <p>We reserve the right to suspend or terminate your access to the Services if we determine, in our sole discretion, that you have violated these Terms.</p>
+
+            <!-- T9. Disclaimers -->
+            <h2 id="t-disclaimer">9. Disclaimers</h2>
+            <p>THE SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.</p>
+            <p>We do not warrant that: (i) the Services will be uninterrupted, timely, secure, or error-free; (ii) the content accessible through the Services will be accurate, reliable, or complete; (iii) any defects in the Services will be corrected; or (iv) the Services or the servers that make them available are free of viruses or other harmful components.</p>
+            <p>Content availability may vary by region and is subject to change without notice. We do not guarantee the availability of any particular channel, program, or content at any time. Streaming quality may vary depending on your internet connection, device capabilities, and other factors beyond our control.</p>
+
+            <!-- T10. Liability -->
+            <h2 id="t-liability">10. Limitation of Liability</h2>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL SIMPLAY, ITS AFFILIATES, LICENSORS, OR SERVICE PROVIDERS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR IN CONNECTION WITH:</p>
+            <ul>
+                <li>Your access to, use of, or inability to access or use the Services;</li>
+                <li>Any conduct or content of any third party on or accessible through the Services;</li>
+                <li>Any content obtained from the Services;</li>
+                <li>Unauthorized access, use, or alteration of your data or transmissions;</li>
+                <li>Any purchases or subscriptions made through the Services.</li>
+            </ul>
+            <p>IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THE USE OF THE SERVICES EXCEED THE AMOUNT YOU HAVE PAID TO US IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR ONE HUNDRED US DOLLARS ($100), WHICHEVER IS GREATER.</p>
+            <p>SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF CERTAIN DAMAGES, SO SOME OR ALL OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU.</p>
+
+            <!-- T11. Termination -->
+            <h2 id="t-termination">11. Termination</h2>
+            <p>We may terminate or suspend your access to the Services immediately, without prior notice or liability, for any reason, including if you breach these Terms. Upon termination, your right to use the Services will immediately cease.</p>
+            <p>You may terminate your use of the Services at any time by deleting the App from your devices and cancelling any active subscriptions through your Apple ID account settings. Termination does not entitle you to a refund of any subscription fees already paid.</p>
+            <p>All provisions of these Terms which by their nature should survive termination shall survive, including but not limited to ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+
+            <!-- T12. Governing Law -->
+            <h2 id="t-governing">12. Governing Law</h2>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the Republic of Türkiye, without regard to its conflict of law provisions. Any disputes arising out of or related to these Terms or the Services shall be subject to the exclusive jurisdiction of the courts located in Istanbul, Türkiye.</p>
+            <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that these Terms will otherwise remain in full force and effect.</p>
+
+            <!-- T13. Changes -->
+            <h2 id="t-changes">13. Changes to These Terms</h2>
+            <p>We reserve the right to modify or replace these Terms at any time at our sole discretion. When we make changes, we will update the "Effective Date" at the top of this page. If we make material changes, we will provide notice through the App or by other appropriate means.</p>
+            <p>Your continued use of the Services after any changes to these Terms constitutes your acceptance of the updated Terms. If you do not agree to the new Terms, you must stop using the Services and cancel any active subscriptions.</p>
+
+            <!-- T14. Contact -->
+            <h2 id="t-contact">14. Contact Us</h2>
+            <p>If you have any questions about these Terms of Use, please contact us at:</p>
+            <p>
+                <strong>Simplay</strong><br>
+                Email: <a href="mailto:legal@blv.sh">legal@blv.sh</a>
+            </p>
+
+            <div class="footer">
+                <p>&copy; 2026 Simplay. All rights reserved.</p>
+            </div>
         </div>
 
-        <!-- 1. Introduction -->
-        <h2 id="intro">1. Introduction</h2>
-        <p>Simplay ("the App", "we", "us", or "our") is an IPTV application available on Apple TV and iOS. This Privacy Policy explains how and why we collect, store, use, disclose, and otherwise process personal data when you use the Simplay application and any related services (collectively, our "<strong>Services</strong>").</p>
-        <p>By using our Services, you acknowledge that you have read and understood this Privacy Policy. If you do not agree with the practices described herein, please do not use our Services.</p>
-        <p>If you have concerns about providing data to us or how it is used as described in this Privacy Policy, please see Section 7 (Control Over Your Information) and Section 8 (Your Privacy Rights), or contact us at <a href="mailto:legal@blv.sh">legal@blv.sh</a>.</p>
+        <!-- ==================== PRIVACY POLICY ==================== -->
+        <div id="privacy" class="tab-content active">
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Effective Date: February 25, 2026</p>
 
-        <!-- 2. What Data We Collect -->
-        <h2 id="data-collect">2. What Data We Collect and How We Collect It</h2>
+            <div class="toc">
+                <p>Contents</p>
+                <ol>
+                    <li><a href="#p-intro">Introduction</a></li>
+                    <li><a href="#p-data-collect">What Data We Collect and How We Collect It</a></li>
+                    <li><a href="#p-purposes">Purposes for Processing Your Data</a></li>
+                    <li><a href="#p-subscriptions">Subscriptions and Purchases</a></li>
+                    <li><a href="#p-disclosure">Disclosure of Your Data</a></li>
+                    <li><a href="#p-third-party">Third-Party Services</a></li>
+                    <li><a href="#p-control">Control Over Your Information</a></li>
+                    <li><a href="#p-rights">Your Privacy Rights</a></li>
+                    <li><a href="#p-children">Children's Privacy</a></li>
+                    <li><a href="#p-security">Data Security</a></li>
+                    <li><a href="#p-retention">Data Retention</a></li>
+                    <li><a href="#p-international">International Data Transfers</a></li>
+                    <li><a href="#p-changes">Changes to This Privacy Policy</a></li>
+                    <li><a href="#p-contact">Contact Us</a></li>
+                </ol>
+            </div>
 
-        <h3>Information Collected Automatically</h3>
-        <p>When you use our Services, we may automatically collect and process the following types of data:</p>
-        <ul>
-            <li><strong>Analytics &amp; Crash Data:</strong> We collect anonymous usage statistics and crash reports to improve app stability and performance. This may include your device model, operating system and version, app version, session duration, general usage patterns, crash logs, and diagnostic information such as loading times, latency, framerate, and other technical diagnostics.</li>
-            <li><strong>Device Data:</strong> We may collect device-specific information such as your device type, operating system version, unique device identifiers (including Identifier for Vendor ("IDFV") on iOS and Apple TV), time zone, language settings, and screen resolution.</li>
-            <li><strong>IP Address &amp; Approximate Location:</strong> We may collect your Internet Protocol ("IP") address, which may be used to determine your approximate geographic location (country or region level). This is used for analytics purposes and to comply with content licensing requirements.</li>
-            <li><strong>Viewing Activity:</strong> We collect information about your viewing history, playback preferences (such as audio and subtitle settings, video quality preferences, and equalizer settings), favorite channels, and content interaction patterns. This data is primarily stored locally on your device and is used to personalize and improve your experience.</li>
-        </ul>
+            <!-- P1. Introduction -->
+            <h2 id="p-intro">1. Introduction</h2>
+            <p>Simplay ("the App", "we", "us", or "our") is an IPTV application available on Apple TV and iOS. This Privacy Policy explains how and why we collect, store, use, disclose, and otherwise process personal data when you use the Simplay application and any related services (collectively, our "<strong>Services</strong>").</p>
+            <p>By using our Services, you acknowledge that you have read and understood this Privacy Policy. If you do not agree with the practices described herein, please do not use our Services.</p>
+            <p>If you have concerns about providing data to us or how it is used as described in this Privacy Policy, please see Section 7 (Control Over Your Information) and Section 8 (Your Privacy Rights), or contact us at <a href="mailto:legal@blv.sh">legal@blv.sh</a>.</p>
 
-        <h3>Information Collected from Third Parties</h3>
-        <p>We may receive certain data from third parties in connection with your use of our Services:</p>
-        <ul>
-            <li><strong>App Marketplaces:</strong> When you download our application or make purchases through the Apple App Store, we receive information about your device, account (such as a transaction receipt), and payment confirmations. We do <strong>not</strong> receive access to your credit card, bank account, or other financial account data when you make purchases through the App Store. The data we receive from Apple is subject to their privacy policies and your settings.</li>
-            <li><strong>Content Providers:</strong> If you connect third-party IPTV or streaming services within the App, we may receive limited information necessary to authenticate and deliver the content you have requested.</li>
-        </ul>
+            <!-- P2. What Data We Collect -->
+            <h2 id="p-data-collect">2. What Data We Collect and How We Collect It</h2>
 
-        <h3>Information We Do Not Collect</h3>
-        <p>Simplay does <strong>not</strong> collect the following:</p>
-        <ul>
-            <li>Your name, email address, or other contact information (unless you voluntarily provide it to us, for example when contacting support)</li>
-            <li>Credit card or banking information</li>
-            <li>Precise geolocation data (GPS)</li>
-            <li>Contacts, photos, microphone, or camera data</li>
-            <li>Data from other apps on your device</li>
-        </ul>
+            <h3>Information Collected Automatically</h3>
+            <p>When you use our Services, we may automatically collect and process the following types of data:</p>
+            <ul>
+                <li><strong>Analytics &amp; Crash Data:</strong> We collect anonymous usage statistics and crash reports to improve app stability and performance. This may include your device model, operating system and version, app version, session duration, general usage patterns, crash logs, and diagnostic information such as loading times, latency, framerate, and other technical diagnostics.</li>
+                <li><strong>Device Data:</strong> We may collect device-specific information such as your device type, operating system version, unique device identifiers (including Identifier for Vendor ("IDFV") on iOS and Apple TV), time zone, language settings, and screen resolution.</li>
+                <li><strong>IP Address &amp; Approximate Location:</strong> We may collect your Internet Protocol ("IP") address, which may be used to determine your approximate geographic location (country or region level). This is used for analytics purposes and to comply with content licensing requirements.</li>
+                <li><strong>Viewing Activity:</strong> We collect information about your viewing history, playback preferences (such as audio and subtitle settings, video quality preferences, and equalizer settings), favorite channels, and content interaction patterns. This data is primarily stored locally on your device and is used to personalize and improve your experience.</li>
+            </ul>
 
-        <!-- 3. Purposes -->
-        <h2 id="purposes">3. Purposes for Processing Your Data</h2>
-        <p>We may use the data we collect for the following purposes:</p>
-        <ul>
-            <li>To provide, operate, and maintain our Services, including delivering IPTV content, managing your viewing preferences, and ensuring playback functionality across Apple TV and iOS;</li>
-            <li>To personalize your experience, including remembering your favorite channels, playback settings, audio equalizer preferences, and viewing history;</li>
-            <li>To improve and optimize the performance, stability, and usability of our Services, including identifying and fixing bugs and crashes;</li>
-            <li>To process and verify in-app purchases and subscriptions, and to ensure that features and content you have paid for are properly activated;</li>
-            <li>To understand how users interact with our Services through aggregated and anonymous analytics, allowing us to make informed decisions about feature development;</li>
-            <li>To communicate with you regarding service-related information, including technical notices, updates, security alerts, and support messages when you contact us;</li>
-            <li>To prevent potentially prohibited or illegal activities, including unauthorized access, fraud, and misuse of our Services;</li>
-            <li>To comply with applicable laws, regulations, legal processes, or governmental requests;</li>
-            <li>To establish, exercise, or defend our legal rights.</li>
-        </ul>
+            <h3>Information Collected from Third Parties</h3>
+            <p>We may receive certain data from third parties in connection with your use of our Services:</p>
+            <ul>
+                <li><strong>App Marketplaces:</strong> When you download our application or make purchases through the Apple App Store, we receive information about your device, account (such as a transaction receipt), and payment confirmations. We do <strong>not</strong> receive access to your credit card, bank account, or other financial account data when you make purchases through the App Store. The data we receive from Apple is subject to their privacy policies and your settings.</li>
+                <li><strong>Content Providers:</strong> If you connect third-party IPTV or streaming services within the App, we may receive limited information necessary to authenticate and deliver the content you have requested.</li>
+            </ul>
 
-        <!-- 4. Subscriptions and Purchases -->
-        <h2 id="subscriptions">4. Subscriptions and Purchases</h2>
-        <p>Simplay offers the following types of in-app purchases:</p>
-        <ul>
-            <li><strong>Auto-Renewable Subscriptions:</strong> We offer two subscription plans that provide access to premium features and content. Subscriptions are billed on a recurring basis (depending on the plan selected) and automatically renew unless cancelled at least 24 hours before the end of the current billing period.</li>
-            <li><strong>Non-Consumable Purchase:</strong> We offer a one-time, non-consumable purchase that permanently unlocks specific features or content. This purchase is tied to your Apple ID and can be restored on any device signed in with the same Apple ID.</li>
-        </ul>
-        <p>All purchases and subscriptions are processed exclusively through the Apple App Store. We do <strong>not</strong> process payments directly and do <strong>not</strong> have access to your payment method details. We receive only a transaction receipt from Apple confirming the purchase, which we use to validate and activate the corresponding features or content in the App.</p>
-        <p>For information about managing your subscriptions, including how to cancel, please visit <a href="https://support.apple.com/en-us/HT202039" target="_blank" rel="noopener">Apple's subscription management guide</a>.</p>
-        <p>We may retain anonymized purchase data (such as which product was purchased and when) for analytics, accounting, and legal compliance purposes.</p>
+            <h3>Information We Do Not Collect</h3>
+            <p>Simplay does <strong>not</strong> collect the following:</p>
+            <ul>
+                <li>Your name, email address, or other contact information (unless you voluntarily provide it to us, for example when contacting support)</li>
+                <li>Credit card or banking information</li>
+                <li>Precise geolocation data (GPS)</li>
+                <li>Contacts, photos, microphone, or camera data</li>
+                <li>Data from other apps on your device</li>
+            </ul>
 
-        <!-- 5. Disclosure -->
-        <h2 id="disclosure">5. Disclosure of Your Data</h2>
-        <p>We do not sell, trade, or rent your personal data to third parties. We may disclose data in the following limited circumstances:</p>
-        <ul>
-            <li><strong>Service Providers:</strong> We may share data with trusted service providers who assist us in operating our Services, such as analytics providers and cloud infrastructure services. These providers are contractually obligated to use data only as necessary to perform services on our behalf and in accordance with this Privacy Policy.</li>
-            <li><strong>Legal Requirements:</strong> We may access, preserve, and disclose your data if we believe doing so is required or appropriate to: (i) comply with law enforcement or national security requests and legal processes, such as a court order or subpoena; (ii) protect your, our, or others' rights, property, or safety; (iii) enforce our policies or terms; or (iv) when we believe disclosure is necessary to prevent harm or in connection with an investigation of suspected illegal activity.</li>
-            <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, reorganization, bankruptcy, or sale of all or a portion of our assets, your data may be transferred as part of that transaction. We will notify you via a prominent notice within our Services of any change in ownership or uses of your personal data.</li>
-            <li><strong>With Your Consent:</strong> We may disclose data about you to third parties when we have your explicit consent to do so.</li>
-        </ul>
+            <!-- P3. Purposes -->
+            <h2 id="p-purposes">3. Purposes for Processing Your Data</h2>
+            <p>We may use the data we collect for the following purposes:</p>
+            <ul>
+                <li>To provide, operate, and maintain our Services, including delivering IPTV content, managing your viewing preferences, and ensuring playback functionality across Apple TV and iOS;</li>
+                <li>To personalize your experience, including remembering your favorite channels, playback settings, audio equalizer preferences, and viewing history;</li>
+                <li>To improve and optimize the performance, stability, and usability of our Services, including identifying and fixing bugs and crashes;</li>
+                <li>To process and verify in-app purchases and subscriptions, and to ensure that features and content you have paid for are properly activated;</li>
+                <li>To understand how users interact with our Services through aggregated and anonymous analytics, allowing us to make informed decisions about feature development;</li>
+                <li>To communicate with you regarding service-related information, including technical notices, updates, security alerts, and support messages when you contact us;</li>
+                <li>To prevent potentially prohibited or illegal activities, including unauthorized access, fraud, and misuse of our Services;</li>
+                <li>To comply with applicable laws, regulations, legal processes, or governmental requests;</li>
+                <li>To establish, exercise, or defend our legal rights.</li>
+            </ul>
 
-        <!-- 6. Third-Party Services -->
-        <h2 id="third-party">6. Third-Party Services</h2>
-        <p>Our Services use the following third-party services:</p>
-        <ul>
-            <li><strong>Firebase Analytics (Google):</strong> We use Firebase Analytics to collect anonymous usage statistics, understand how users interact with our app, and identify trends. Firebase may collect device identifiers, IP addresses, and usage data. For more information, please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Information</a>.</li>
-            <li><strong>Firebase Crashlytics (Google):</strong> We use Firebase Crashlytics to collect crash reports and diagnostic data to help us identify and fix issues. This may include device state information, crash stack traces, and device identifiers. Data collected by Crashlytics is governed by <a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener">Firebase Crashlytics Terms</a>.</li>
-        </ul>
-        <p>Our Services may contain links to third-party websites, content providers, or services. This Privacy Policy does not apply to, and we are not responsible for, the privacy practices of any third-party services. We encourage you to review the privacy policies of any third-party services you access through or in connection with our App.</p>
+            <!-- P4. Subscriptions and Purchases -->
+            <h2 id="p-subscriptions">4. Subscriptions and Purchases</h2>
+            <p>Simplay offers the following types of in-app purchases:</p>
+            <ul>
+                <li><strong>Simplay Plus Subscription:</strong> A premium auto-renewable subscription available as a monthly or annual plan that provides access to additional features and content. Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period.</li>
+                <li><strong>Non-Consumable Purchase:</strong> We offer a one-time, non-consumable purchase that permanently unlocks specific features or content. This purchase is tied to your Apple ID and can be restored on any device signed in with the same Apple ID.</li>
+            </ul>
+            <p>All purchases and subscriptions are processed exclusively through the Apple App Store. We do <strong>not</strong> process payments directly and do <strong>not</strong> have access to your payment method details. We receive only a transaction receipt from Apple confirming the purchase, which we use to validate and activate the corresponding features or content in the App.</p>
+            <p>For information about managing your subscriptions, including how to cancel, please visit <a href="https://support.apple.com/en-us/HT202039" target="_blank" rel="noopener">Apple's subscription management guide</a>.</p>
+            <p>We may retain anonymized purchase data (such as which product was purchased and when) for analytics, accounting, and legal compliance purposes.</p>
 
-        <!-- 7. Control -->
-        <h2 id="control">7. Control Over Your Information</h2>
-        <p>You have several options to control how your data is handled:</p>
-        <ul>
-            <li><strong>Delete or Reinstall the App:</strong> If you delete Simplay from your device, we will no longer collect data via the App on that device. Locally stored data (such as viewing history, favorites, and preferences) will be removed. However, we may still retain anonymous analytics data that was collected prior to deletion.</li>
-            <li><strong>Restore Purchases:</strong> Non-consumable purchases and active subscriptions are tied to your Apple ID. You can restore them at any time by reinstalling the App and using the restore purchases feature.</li>
-            <li><strong>Limit Analytics Collection:</strong> You can limit analytics data collection by adjusting your device privacy settings. On iOS and Apple TV, go to <strong>Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements</strong> and disable sharing analytics data.</li>
-            <li><strong>Limit Ad Tracking:</strong> Although Simplay does not currently display advertisements, you can limit ad tracking on your device via <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong> on iOS, or the equivalent setting on Apple TV.</li>
-            <li><strong>Reset Advertising Identifier:</strong> You can reset your device's advertising identifier at any time through your device's privacy settings.</li>
-        </ul>
+            <!-- P5. Disclosure -->
+            <h2 id="p-disclosure">5. Disclosure of Your Data</h2>
+            <p>We do not sell, trade, or rent your personal data to third parties. We may disclose data in the following limited circumstances:</p>
+            <ul>
+                <li><strong>Service Providers:</strong> We may share data with trusted service providers who assist us in operating our Services, such as analytics providers and cloud infrastructure services. These providers are contractually obligated to use data only as necessary to perform services on our behalf and in accordance with this Privacy Policy.</li>
+                <li><strong>Legal Requirements:</strong> We may access, preserve, and disclose your data if we believe doing so is required or appropriate to: (i) comply with law enforcement or national security requests and legal processes, such as a court order or subpoena; (ii) protect your, our, or others' rights, property, or safety; (iii) enforce our policies or terms; or (iv) when we believe disclosure is necessary to prevent harm or in connection with an investigation of suspected illegal activity.</li>
+                <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, reorganization, bankruptcy, or sale of all or a portion of our assets, your data may be transferred as part of that transaction. We will notify you via a prominent notice within our Services of any change in ownership or uses of your personal data.</li>
+                <li><strong>With Your Consent:</strong> We may disclose data about you to third parties when we have your explicit consent to do so.</li>
+            </ul>
 
-        <!-- 8. Rights -->
-        <h2 id="rights">8. Your Privacy Rights</h2>
-        <p>Depending on the privacy laws applicable in your jurisdiction, you may have some or all of the following rights regarding your personal data:</p>
-        <ul>
-            <li><strong>Right of Access:</strong> You may have the right to request access to the personal data we hold about you.</li>
-            <li><strong>Right to Correction:</strong> You may have the right to request that we correct or complete any inaccurate or incomplete personal data.</li>
-            <li><strong>Right to Deletion:</strong> You may have the right to request that we delete your personal data, subject to certain legal exceptions.</li>
-            <li><strong>Right to Restrict Processing:</strong> You may have the right to request that we restrict the processing of your personal data under certain circumstances.</li>
-            <li><strong>Right to Object:</strong> You may have the right to object to certain uses of your personal data.</li>
-            <li><strong>Right to Data Portability:</strong> You may have the right to receive your personal data in a structured, commonly used, and machine-readable format.</li>
-            <li><strong>Right to Withdraw Consent:</strong> Where we rely on your consent to process personal data, you may withdraw your consent at any time. Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal.</li>
-            <li><strong>Right to Non-Discrimination:</strong> You have the right not to receive discriminatory treatment for exercising your privacy rights.</li>
-        </ul>
-        <p>To submit a request to exercise your privacy rights, please contact us at <a href="mailto:legal@blv.sh">legal@blv.sh</a>. We may need to verify your identity before processing your request. We will respond to all legitimate requests within the timeframes required by applicable law.</p>
+            <!-- P6. Third-Party Services -->
+            <h2 id="p-third-party">6. Third-Party Services</h2>
+            <p>Our Services use the following third-party services:</p>
+            <ul>
+                <li><strong>Firebase Analytics (Google):</strong> We use Firebase Analytics to collect anonymous usage statistics, understand how users interact with our app, and identify trends. Firebase may collect device identifiers, IP addresses, and usage data. For more information, please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Information</a>.</li>
+                <li><strong>Firebase Crashlytics (Google):</strong> We use Firebase Crashlytics to collect crash reports and diagnostic data to help us identify and fix issues. This may include device state information, crash stack traces, and device identifiers. Data collected by Crashlytics is governed by <a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener">Firebase Crashlytics Terms</a>.</li>
+            </ul>
+            <p>Our Services may contain links to third-party websites, content providers, or services. This Privacy Policy does not apply to, and we are not responsible for, the privacy practices of any third-party services. We encourage you to review the privacy policies of any third-party services you access through or in connection with our App.</p>
 
-        <h3>For Users in the European Economic Area (EEA), United Kingdom, and Switzerland</h3>
-        <p>If you are located in the EEA, UK, or Switzerland, we process your personal data on the following legal bases: (i) your consent; (ii) performance of a contract (to deliver the Services you have purchased); (iii) our legitimate interests (to improve our Services and ensure security); and (iv) compliance with legal obligations. You have the right to lodge a complaint with your local data protection authority if you believe your data has been processed unlawfully.</p>
+            <!-- P7. Control -->
+            <h2 id="p-control">7. Control Over Your Information</h2>
+            <p>You have several options to control how your data is handled:</p>
+            <ul>
+                <li><strong>Delete or Reinstall the App:</strong> If you delete Simplay from your device, we will no longer collect data via the App on that device. Locally stored data (such as viewing history, favorites, and preferences) will be removed. However, we may still retain anonymous analytics data that was collected prior to deletion.</li>
+                <li><strong>Restore Purchases:</strong> Non-consumable purchases and active subscriptions are tied to your Apple ID. You can restore them at any time by reinstalling the App and using the restore purchases feature.</li>
+                <li><strong>Limit Analytics Collection:</strong> You can limit analytics data collection by adjusting your device privacy settings. On iOS and Apple TV, go to <strong>Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements</strong> and disable sharing analytics data.</li>
+                <li><strong>Limit Ad Tracking:</strong> Although Simplay does not currently display advertisements, you can limit ad tracking on your device via <strong>Settings &gt; Privacy &amp; Security &gt; Tracking</strong> on iOS, or the equivalent setting on Apple TV.</li>
+                <li><strong>Reset Advertising Identifier:</strong> You can reset your device's advertising identifier at any time through your device's privacy settings.</li>
+            </ul>
 
-        <h3>For Users in California (CCPA/CPRA)</h3>
-        <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA). We do not sell your personal information as defined by the CCPA/CPRA. You have the right to request disclosure of the categories and specific pieces of personal data we have collected, to request deletion, and to not be discriminated against for exercising your rights.</p>
+            <!-- P8. Rights -->
+            <h2 id="p-rights">8. Your Privacy Rights</h2>
+            <p>Depending on the privacy laws applicable in your jurisdiction, you may have some or all of the following rights regarding your personal data:</p>
+            <ul>
+                <li><strong>Right of Access:</strong> You may have the right to request access to the personal data we hold about you.</li>
+                <li><strong>Right to Correction:</strong> You may have the right to request that we correct or complete any inaccurate or incomplete personal data.</li>
+                <li><strong>Right to Deletion:</strong> You may have the right to request that we delete your personal data, subject to certain legal exceptions.</li>
+                <li><strong>Right to Restrict Processing:</strong> You may have the right to request that we restrict the processing of your personal data under certain circumstances.</li>
+                <li><strong>Right to Object:</strong> You may have the right to object to certain uses of your personal data.</li>
+                <li><strong>Right to Data Portability:</strong> You may have the right to receive your personal data in a structured, commonly used, and machine-readable format.</li>
+                <li><strong>Right to Withdraw Consent:</strong> Where we rely on your consent to process personal data, you may withdraw your consent at any time. Withdrawal of consent does not affect the lawfulness of processing carried out before the withdrawal.</li>
+                <li><strong>Right to Non-Discrimination:</strong> You have the right not to receive discriminatory treatment for exercising your privacy rights.</li>
+            </ul>
+            <p>To submit a request to exercise your privacy rights, please contact us at <a href="mailto:legal@blv.sh">legal@blv.sh</a>. We may need to verify your identity before processing your request. We will respond to all legitimate requests within the timeframes required by applicable law.</p>
 
-        <h3>For Users in Türkiye (KVKK)</h3>
-        <p>If you are located in Türkiye, your personal data is processed in accordance with the Turkish Personal Data Protection Law No. 6698 ("KVKK"). You have the right to learn whether your personal data has been processed, to request information about such processing, to learn the purpose of processing and whether data is used in accordance with its purpose, to know third parties to whom personal data has been transferred, to request correction of incomplete or inaccurate data, to request deletion or destruction of data, and to object to any outcome that arises from the analysis of data exclusively through automated systems. To exercise these rights, please contact us at <a href="mailto:legal@blv.sh">legal@blv.sh</a>.</p>
+            <h3>For Users in the European Economic Area (EEA), United Kingdom, and Switzerland</h3>
+            <p>If you are located in the EEA, UK, or Switzerland, we process your personal data on the following legal bases: (i) your consent; (ii) performance of a contract (to deliver the Services you have purchased); (iii) our legitimate interests (to improve our Services and ensure security); and (iv) compliance with legal obligations. You have the right to lodge a complaint with your local data protection authority if you believe your data has been processed unlawfully.</p>
 
-        <!-- 9. Children -->
-        <h2 id="children">9. Children's Privacy</h2>
-        <p>Our Services are not directed at children under the age of 13 (or the applicable age of consent in your jurisdiction). We do not knowingly collect personal data from children under this age. If you are a parent or guardian and believe that your child has provided personal data to us, please contact us at <a href="mailto:legal@blv.sh">legal@blv.sh</a> so that we can take steps to remove such information and terminate the child's access to our Services.</p>
-        <p>If you are above the age of 13 but under the age of 18 (or the age of majority in your jurisdiction), you must obtain the consent of your parent or legal guardian before using our Services.</p>
+            <h3>For Users in California (CCPA/CPRA)</h3>
+            <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA) and the California Privacy Rights Act (CPRA). We do not sell your personal information as defined by the CCPA/CPRA. You have the right to request disclosure of the categories and specific pieces of personal data we have collected, to request deletion, and to not be discriminated against for exercising your rights.</p>
 
-        <!-- 10. Security -->
-        <h2 id="security">10. Data Security</h2>
-        <p>We maintain physical, technical, and organizational measures designed to protect personal data from unauthorized access, alteration, disclosure, or destruction. These measures include encryption of data in transit, secure cloud infrastructure, access controls, and regular security assessments.</p>
-        <p>However, no method of transmission over the internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security. We encourage you to take steps to protect your devices and accounts.</p>
+            <h3>For Users in Türkiye (KVKK)</h3>
+            <p>If you are located in Türkiye, your personal data is processed in accordance with the Turkish Personal Data Protection Law No. 6698 ("KVKK"). You have the right to learn whether your personal data has been processed, to request information about such processing, to learn the purpose of processing and whether data is used in accordance with its purpose, to know third parties to whom personal data has been transferred, to request correction of incomplete or inaccurate data, to request deletion or destruction of data, and to object to any outcome that arises from the analysis of data exclusively through automated systems. To exercise these rights, please contact us at <a href="mailto:legal@blv.sh">legal@blv.sh</a>.</p>
 
-        <!-- 11. Retention -->
-        <h2 id="retention">11. Data Retention</h2>
-        <p>We retain personal data only for as long as necessary to fulfill the purposes for which it was collected, including to satisfy any legal, regulatory, tax, accounting, or reporting requirements. Specifically:</p>
-        <ul>
-            <li><strong>Analytics and Crash Data:</strong> Retained in Firebase for up to 14 months, after which it is automatically deleted or anonymized.</li>
-            <li><strong>Viewing History and Preferences:</strong> Stored locally on your device and removed when you delete the App.</li>
-            <li><strong>Purchase and Subscription Records:</strong> Anonymized transaction records may be retained for up to 5 years for accounting and legal compliance purposes.</li>
-        </ul>
-        <p>Once personal data is no longer necessary for the purposes described above or required by law, we delete or anonymize it.</p>
+            <!-- P9. Children -->
+            <h2 id="p-children">9. Children's Privacy</h2>
+            <p>Our Services are not directed at children under the age of 13 (or the applicable age of consent in your jurisdiction). We do not knowingly collect personal data from children under this age. If you are a parent or guardian and believe that your child has provided personal data to us, please contact us at <a href="mailto:legal@blv.sh">legal@blv.sh</a> so that we can take steps to remove such information and terminate the child's access to our Services.</p>
+            <p>If you are above the age of 13 but under the age of 18 (or the age of majority in your jurisdiction), you must obtain the consent of your parent or legal guardian before using our Services.</p>
 
-        <!-- 12. International Transfers -->
-        <h2 id="international">12. International Data Transfers</h2>
-        <p>Our analytics data may be processed by third-party service providers (such as Google Firebase) in countries other than the country in which you reside. These countries may have data protection laws that are different from the laws of your country. When we transfer data internationally, we take steps to ensure that adequate safeguards are in place to protect your data in accordance with this Privacy Policy and applicable laws, including standard contractual clauses approved by the European Commission where applicable.</p>
+            <!-- P10. Security -->
+            <h2 id="p-security">10. Data Security</h2>
+            <p>We maintain physical, technical, and organizational measures designed to protect personal data from unauthorized access, alteration, disclosure, or destruction. These measures include encryption of data in transit, secure cloud infrastructure, access controls, and regular security assessments.</p>
+            <p>However, no method of transmission over the internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal data, we cannot guarantee its absolute security. We encourage you to take steps to protect your devices and accounts.</p>
 
-        <!-- 13. Changes -->
-        <h2 id="changes">13. Changes to This Privacy Policy</h2>
-        <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make changes, we will update the "Effective Date" at the top of this page. If we make material changes, we will provide notice through our Services or by other appropriate means. We encourage you to review this Privacy Policy periodically to stay informed about how we protect your data.</p>
-        <p>Your continued use of our Services after any changes to this Privacy Policy constitutes your acceptance of the updated policy.</p>
+            <!-- P11. Retention -->
+            <h2 id="p-retention">11. Data Retention</h2>
+            <p>We retain personal data only for as long as necessary to fulfill the purposes for which it was collected, including to satisfy any legal, regulatory, tax, accounting, or reporting requirements. Specifically:</p>
+            <ul>
+                <li><strong>Analytics and Crash Data:</strong> Retained in Firebase for up to 14 months, after which it is automatically deleted or anonymized.</li>
+                <li><strong>Viewing History and Preferences:</strong> Stored locally on your device and removed when you delete the App.</li>
+                <li><strong>Purchase and Subscription Records:</strong> Anonymized transaction records may be retained for up to 5 years for accounting and legal compliance purposes.</li>
+            </ul>
+            <p>Once personal data is no longer necessary for the purposes described above or required by law, we delete or anonymize it.</p>
 
-        <!-- 14. Contact -->
-        <h2 id="contact">14. Contact Us</h2>
-        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data processing practices, please contact us at:</p>
-        <p>
-            <strong>Simplay</strong><br>
-            Email: <a href="mailto:legal@blv.sh">legal@blv.sh</a>
-        </p>
-        <p>We will do our best to respond to your inquiries in a timely manner.</p>
+            <!-- P12. International Transfers -->
+            <h2 id="p-international">12. International Data Transfers</h2>
+            <p>Our analytics data may be processed by third-party service providers (such as Google Firebase) in countries other than the country in which you reside. These countries may have data protection laws that are different from the laws of your country. When we transfer data internationally, we take steps to ensure that adequate safeguards are in place to protect your data in accordance with this Privacy Policy and applicable laws, including standard contractual clauses approved by the European Commission where applicable.</p>
 
-        <div class="footer">
-            <p>&copy; 2026 Simplay. All rights reserved.</p>
+            <!-- P13. Changes -->
+            <h2 id="p-changes">13. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make changes, we will update the "Effective Date" at the top of this page. If we make material changes, we will provide notice through our Services or by other appropriate means. We encourage you to review this Privacy Policy periodically to stay informed about how we protect your data.</p>
+            <p>Your continued use of our Services after any changes to this Privacy Policy constitutes your acceptance of the updated policy.</p>
+
+            <!-- P14. Contact -->
+            <h2 id="p-contact">14. Contact Us</h2>
+            <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data processing practices, please contact us at:</p>
+            <p>
+                <strong>Simplay</strong><br>
+                Email: <a href="mailto:legal@blv.sh">legal@blv.sh</a>
+            </p>
+
+            <div class="footer">
+                <p>&copy; 2026 Simplay. All rights reserved.</p>
+            </div>
         </div>
+
     </div>
+
+    <script>
+        function switchTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(tab).classList.add('active');
+            event.target.classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Handle direct linking
+        if (window.location.hash === '#terms') {
+            switchTab('terms');
+        }
+    </script>
 </body>
 </html>
